@@ -1,8 +1,9 @@
 import Card from "../card/card.component";
+import { Monster } from "../../App";
 
 import "./card-list.style.css";
 
-const CardList = ({ monsters }) => {
+const CardList = ({ monsters }: { monsters: Monster[] }) => {
   return (
     <div className="card-list-container">
       {/* destructuring monster.name & monster.email */}
